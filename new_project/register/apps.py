@@ -2,6 +2,6 @@ from django.apps import AppConfig
 
 
 class RegisterConfig(AppConfig):
-    name = 'register'
+    name = 'new_project.register'
     
     

@@ -1,0 +1,12 @@
+venv
+.env
+*.pyc
+media
+.idea
+.idea/workspace.xml
+*.pyc
+*.pyc
+*.pyc
+register/__pycache__/__init__.cpython-310.pyc
+register/__pycache__/models.cpython-310.pyc
+register/migrations/*

@@ -39,10 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'new_project.register',
-    'rest_framework'
-    'new_project',
-    'mywebsite',
+    'rest_framework',
+    'new_project.register'
     
 
 
@@ -90,9 +88,7 @@ DATABASES = {
         "PASSWORD": os.environ.get("SQL_PASSWORD", "secret"),
         "HOST": os.environ.get("SQL_HOST", "127.0.0.1"),
         "PORT": os.environ.get("SQL_PORT", "5432"),
-        'OPTIONS': {
-            'charset': 'utf8mb4'
-            },
+        
     }
 }
 

@@ -16,15 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from register import todo as todos
-
+from new_project.register.todo import TODOs
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path("add/", todos.todo, name="addTODO"),
-    path("get/", todos.todo, name="getTODO"),
-    path("update/", todos.todo, name="updateTODO"),
-    path("delete/", todos.todo, name="deleteTODO"),
+    # path("add/", todos, name="addTODO"),
+    # path("get/", todos.todo, name="getTODO"),
+    # path("update/", todos.todo, name="updateTODO"),
+    # path("delete/", todos.todo, name="deleteTODO"),
+
+    path('todos/', TODOs.as_view(), name='todos'),
 
 ]
